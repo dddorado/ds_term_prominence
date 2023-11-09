@@ -1,0 +1,72 @@
+---
+title: "Prominence of occurrence accorded to data science and other related terms in Philippine newspapers"
+date: last-modified
+author:
+  - name: Dan Anthony Dorado
+    orcid: 0000-0002-2844-0732
+    email: dddorado@up.edu.ph
+    affiliation: 
+      - name: UP School of Library and Information Studies
+        city: Quezon City
+        state: MM
+        url: httP://upslis.info
+abstract: > 
+  In the contemporary era marked by the digital revolution, data science has emerged as a pivotal discipline globally. This study examines the prominence and frequency of data science and its associated terminologies within Philippine newspapers. By analyzing a comprehensive selection of major Philippine dailies over 20 years, we assessed how often and in what context these terms appear. Our findings indicate a steadily increasing trend, reflecting the growing significance and understanding of data science in the country. Notably, the words were most frequently associated with business, technology, and academic news sections. However, there was variability in the depth and accuracy of discussions surrounding these terms. The media's portrayal, in many instances, was foundational, suggesting a burgeoning stage of familiarity with data science concepts among the general populace. This study underscores the role of print media in disseminating and shaping perceptions about emerging technological fields in the Philippines. It offers insights into potential areas for enhanced media literacy and collaboration.
+keywords:
+  - Data Science
+  - Philippines Newspaper
+  - Inquirer Newspaper
+license: "CC BY"
+copyright: 
+  holder: Dan Anthony Dorado
+  year: 2023
+funding: "The author received no specific funding for this work."
+format: pdf
+toc: false
+number-sections: true
+highlight-style: github
+papersize: letter
+link-citations: true
+bibliography: https://api.citedrive.com/bib/9ac6b0e9-03b3-4d19-8cce-f0ddb36e10e3/references.bib?x=eyJpZCI6ICI5YWM2YjBlOS0wM2IzLTRkMTktOGNjZS1mMGRkYjM2ZTEwZTMiLCAidXNlciI6ICI2NzA1IiwgInNpZ25hdHVyZSI6ICI5M2U0MzMzNzJhYTk3OWNlOWQzZTg4NjUyNzVmNDkzNjgyNWUzYTg5NDFlYjQ4YzhjZWYwZjkzOWZlZmZhN2Q5In0=/bibliography.bib
+csl: sustainability.csl
+---
+
+# Introduction
+
+## Background of the study
+
+### Global rise of data science and its influence.
+
+Data science has become increasingly important in decision-making processes across industries. The advancements in data volume and computational capabilities have played a significant role in the growth and application of data science [@Hey2012]. This growth has led to the recognition of data science as a crucial discipline in driving decision-making. Companies have realized the need to hire data scientists, and academic institutions now offer data science programs [@Provost2013]. The application of data science techniques has also expanded to fields such as computer and network security [@Tewari2021]. In sustainable development, data science has become crucial in meeting human development needs while protecting the earth's life support systems [@Cash2003]. By utilizing knowledge systems, scientists, technologists, policymakers, and communities at all levels can work together to find sustainable solutions. Data science has also made a significant impact on global health. Efforts by organizations like Sana (MIT) have played a vital role in promoting data science in global health [@Agha-Mir-Salim2020]. The use of health information technology as a premise for data science in global health has opened up opportunities for improving healthcare outcomes worldwide. In asthma research, data science has helped understand the worldwide prevalence of asthma symptoms. Studies have shown that the global burden of asthma is continuing to rise, with increasing prevalence in Africa, Latin America, and parts of Asia [@Pearce2007]. However, it is essential to note that there has been a lack of new worldwide data on asthma prevalence since 2003 [@Asher2020]. The global macroeconomic impacts of COVID-19 have also been analyzed using data science techniques. Different scenarios have been examined to understand their effects on macroeconomic outcomes and financial markets [@McKibbin2020]. This analysis provides valuable insights for policymakers and economists in navigating the challenges posed by the pandemic. In glaucoma research, data science has been used to analyze the distribution pattern and subject domain knowledge of worldwide glaucoma research [@Ichhpujani2020]. This scientometric review provides a comprehensive understanding of the research landscape in this area. Scholarly production analysis has also benefited from data science methodologies. Studies have compared the performance of different databases, such as Google Scholar, Scopus, and Web of Science, regarding citation analysis and cross-disciplinary coverage @Harzing2015. These analyses contribute to the understanding of the impact and reach of scholarly publications worldwide.
+
+Overall, the global rise of data science has had a transformative influence on various fields. It has enabled researchers, policymakers, and practitioners to gain valuable insights, make informed decisions, and address complex challenges in a data-driven manner. However, it is essential to note that the emphasis on data science education primarily focuses on computer science and statistics, with limited training in ethics and domain-specific knowledge [@Oliver2021]. This highlights the need for a more comprehensive approach to data science education that includes training in ethics and domain-specific context. Additionally, the application of data-driven research methods has extended beyond computer science to disciplines such as social sciences and humanities [@Weichselbraun2021].
+
+### Importance of media in disseminating new terminologies and concepts.
+
+The media is crucial in disseminating new terminologies and concepts to the public. It serves as a platform for introducing and explaining unfamiliar terms and ideas, making them accessible and understandable to a broad audience. A critical aspect of the media's role in disseminating new terminologies and concepts is its ability to reach a large audience. The mass media, including mainstream newspapers, television, and online news outlets, have a broad reach and can effectively communicate new terminologies and concepts to a diverse range of people [@Herman1989]. This widespread dissemination helps to increase awareness and understanding of these new terms and ideas. Furthermore, the media can shape public discourse and influence public opinion. Through news articles, opinion pieces, and other media content, the media can introduce and promote new terminologies and concepts, framing them in a way that resonates with the audience [@Shanahan1988]. This framing can help to shape public perceptions and attitudes towards these new terms and ideas. In addition, the media's role in disseminating new terminologies and concepts extends to specialized fields such as healthcare and medicine. Health journalism, for example, plays a crucial role in sharing health information with the public [@Keshvari2018]. The media can introduce new medical terminologies and concepts, helping to educate the public about important health issues and advancements in medical research.
+
+However, it is essential to note that the media's role in disseminating new terminologies and concepts is not without challenges. One challenge is the potential for the media to misinterpret or misrepresent these new terms and ideas. The media's framing of new terminologies and concepts can sometimes be influenced by various factors, such as political or economic interests [@Herman1989]. This can distort the original meaning or intent of these terms and ideas. Another challenge is the potential for the media to perpetuate stereotypes or biases through the use of new terminologies and concepts. For example, in the context of Islam-related vocabularies, the media's use of specific terms can influence the audience's perception of Islam as a religion of terrorism [@Younes2020]. This highlights the importance of responsible and accurate reporting when introducing and disseminating new terminologies and concepts.
+
+## Objective of the research
+
+Data science and other related terms have emerged as a crucial field in the era of big data and advanced analytics. It encompasses various techniques and methodologies for extracting insights and knowledge from large datasets. The prominence of data science in the Philippines has been a topic of interest, as it plays a significant role in driving innovation, economic growth, and decision-making processes. This research objective aims to assess the frequency and prominence of data science and related terms in Philippine newspapers.
+
+# Literature Review
+
+## Data science: Definition and global trends
+
+Data science is a field dedicated to the principled extraction of knowledge from complex data [@Sanchez-Pinto2018]. It combines principles from statistics, which focuses on learning relationships from data, and computer science, which emphasizes efficient computing algorithms [@Deo2015]. The goal of data science is to extract generalizable knowledge from data [@Song2015]. It is a rapidly growing field becoming increasingly important in various domains, including critical care in medicine [@Sanchez-Pinto2018]. Data science is closely related to other concepts, such as big data and data-driven decision-making [@Provost2013]. It is intricately intertwined with these concepts and plays a crucial role in analyzing and making sense of large volumes of data [@Provost2013]. Data science is often used to rapidly derive knowledge and discover trends and novel research topics from vast literature [@Shen2018].
+
+While data science builds on knowledge from various disciplines, such as computer science, mathematics, and statistics, it is a unique field with challenges and mysteries to unlock [@Wing2020]. It is establishing itself as a profession and has the potential to make significant contributions to society [@Walker2015]. Data science is also characterized by its generic and vaguely defined nature [@Peng2021]. There is no universally accepted definition of data science, and different perspectives exist. Some define data science as the study of the generalizable extraction of knowledge from data [@Song2015], while others emphasize its interdisciplinary nature and its intersection with statistics, computer science, and substantive fields [@Zhang2021].
+
+## Media's role in popularizing technical jargons and scientific terms
+
+The role of media in introducing and normalizing new terminologies and concepts to the public is pivotal in today's rapidly evolving world. As new scientific and technological terms such as 'data science', 'big data', and 'artificial intelligence' emerge, media outlets serve as the primary source for the public's initial exposure to these concepts [@Krosnick2006]. Moreover, the media plays a crucial role in providing context and explanation for these complex terms, making them accessible and understandable to a non-specialist audience. This involves decoding technical jargon and presenting information using metaphors, analogies, and simplifications to convey complex ideas [@Fitzgerald2021].
+
+The influence of media in shaping public understanding extends beyond the introduction of new concepts. It also encompasses the dissemination of knowledge through social media platforms, which have rapidly gained popularity worldwide. The speed of uptake of social media applications highlights their significance as tools for knowledge sharing, further emphasizing the central role of media in the dissemination of information [@Naeem2019]. Additionally, the development of the Internet and social media has expanded the speed and scope of information dissemination, although not all widely disseminated information is accurate, emphasizing the need for critical evaluation of information sources [@Wang2021].
+
+Furthermore, the media's influence on public perception is evident in the context of scientific and technological advancements. The media operates at the interface between science and society, reporting on scientific advances and technological developments in ways that shape public perceptions of new technologies and their applications. This underscores the media's role in framing and agenda setting, particularly in relation to novel technologies, influencing public views and perceptions [@Fitzgerald2021].
+
+# Methodology
+
+# References

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Anthony Dorado">
+<meta name="dcterms.date" content="2023-11-10">
+<meta name="keywords" content="Data Science, Philippines Newspaper, Inquirer Newspaper">
+
+<title>Prominence of occurrence accorded to data science and other related terms in Philippine newspapers</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="Data Science Terms Prominence_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Data Science Terms Prominence_files/libs/quarto-html/quarto.js"></script>
+<script src="Data Science Terms Prominence_files/libs/quarto-html/popper.min.js"></script>
+<script src="Data Science Terms Prominence_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Data Science Terms Prominence_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Data Science Terms Prominence_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Data Science Terms Prominence_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Data Science Terms Prominence_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Data Science Terms Prominence_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Data Science Terms Prominence_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Prominence of occurrence accorded to data science and other related terms in Philippine newspapers</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dan Anthony Dorado <a href="https://orcid.org/0000-0002-2844-0732" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="httP://upslis.info">
+            UP School of Library and Information Studies
+            </a>
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 10, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Abstract</div>
+    <p>In the contemporary era marked by the digital revolution, data science has emerged as a pivotal discipline globally. This study examines the prominence and frequency of data science and its associated terminologies within Philippine newspapers. By analyzing a comprehensive selection of major Philippine dailies over 20 years, we assessed how often and in what context these terms appear. Our findings indicate a steadily increasing trend, reflecting the growing significance and understanding of data science in the country. Notably, the words were most frequently associated with business, technology, and academic news sections. However, there was variability in the depth and accuracy of discussions surrounding these terms. The media’s portrayal, in many instances, was foundational, suggesting a burgeoning stage of familiarity with data science concepts among the general populace. This study underscores the role of print media in disseminating and shaping perceptions about emerging technological fields in the Philippines. It offers insights into potential areas for enhanced media literacy and collaboration.</p>
+  </div>
+</div>
+
+</header>
+
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<section id="background-of-the-study" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="background-of-the-study"><span class="header-section-number">1.1</span> Background of the study</h2>
+<section id="global-rise-of-data-science-and-its-influence." class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="global-rise-of-data-science-and-its-influence."><span class="header-section-number">1.1.1</span> Global rise of data science and its influence.</h3>
+<p>Data science has become increasingly important in decision-making processes across industries. The advancements in data volume and computational capabilities have played a significant role in the growth and application of data science <span class="citation" data-cites="Hey2012">[<a href="#ref-Hey2012" role="doc-biblioref">1</a>]</span>. This growth has led to the recognition of data science as a crucial discipline in driving decision-making. Companies have realized the need to hire data scientists, and academic institutions now offer data science programs <span class="citation" data-cites="Provost2013">[<a href="#ref-Provost2013" role="doc-biblioref">2</a>]</span>. The application of data science techniques has also expanded to fields such as computer and network security <span class="citation" data-cites="Tewari2021">[<a href="#ref-Tewari2021" role="doc-biblioref">3</a>]</span>. In sustainable development, data science has become crucial in meeting human development needs while protecting the earth’s life support systems <span class="citation" data-cites="Cash2003">[<a href="#ref-Cash2003" role="doc-biblioref">4</a>]</span>. By utilizing knowledge systems, scientists, technologists, policymakers, and communities at all levels can work together to find sustainable solutions. Data science has also made a significant impact on global health. Efforts by organizations like Sana (MIT) have played a vital role in promoting data science in global health <span class="citation" data-cites="Agha-Mir-Salim2020">[<a href="#ref-Agha-Mir-Salim2020" role="doc-biblioref">5</a>]</span>. The use of health information technology as a premise for data science in global health has opened up opportunities for improving healthcare outcomes worldwide. In asthma research, data science has helped understand the worldwide prevalence of asthma symptoms. Studies have shown that the global burden of asthma is continuing to rise, with increasing prevalence in Africa, Latin America, and parts of Asia <span class="citation" data-cites="Pearce2007">[<a href="#ref-Pearce2007" role="doc-biblioref">6</a>]</span>. However, it is essential to note that there has been a lack of new worldwide data on asthma prevalence since 2003 <span class="citation" data-cites="Asher2020">[<a href="#ref-Asher2020" role="doc-biblioref">7</a>]</span>. The global macroeconomic impacts of COVID-19 have also been analyzed using data science techniques. Different scenarios have been examined to understand their effects on macroeconomic outcomes and financial markets <span class="citation" data-cites="McKibbin2020">[<a href="#ref-McKibbin2020" role="doc-biblioref">8</a>]</span>. This analysis provides valuable insights for policymakers and economists in navigating the challenges posed by the pandemic. In glaucoma research, data science has been used to analyze the distribution pattern and subject domain knowledge of worldwide glaucoma research <span class="citation" data-cites="Ichhpujani2020">[<a href="#ref-Ichhpujani2020" role="doc-biblioref">9</a>]</span>. This scientometric review provides a comprehensive understanding of the research landscape in this area. Scholarly production analysis has also benefited from data science methodologies. Studies have compared the performance of different databases, such as Google Scholar, Scopus, and Web of Science, regarding citation analysis and cross-disciplinary coverage <span class="citation" data-cites="Harzing2015">[<a href="#ref-Harzing2015" role="doc-biblioref">10</a>]</span>. These analyses contribute to the understanding of the impact and reach of scholarly publications worldwide.</p>
+<p>Overall, the global rise of data science has had a transformative influence on various fields. It has enabled researchers, policymakers, and practitioners to gain valuable insights, make informed decisions, and address complex challenges in a data-driven manner. However, it is essential to note that the emphasis on data science education primarily focuses on computer science and statistics, with limited training in ethics and domain-specific knowledge <span class="citation" data-cites="Oliver2021">[<a href="#ref-Oliver2021" role="doc-biblioref">11</a>]</span>. This highlights the need for a more comprehensive approach to data science education that includes training in ethics and domain-specific context. Additionally, the application of data-driven research methods has extended beyond computer science to disciplines such as social sciences and humanities <span class="citation" data-cites="Weichselbraun2021">[<a href="#ref-Weichselbraun2021" role="doc-biblioref">12</a>]</span>.</p>
+</section>
+<section id="importance-of-media-in-disseminating-new-terminologies-and-concepts." class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="importance-of-media-in-disseminating-new-terminologies-and-concepts."><span class="header-section-number">1.1.2</span> Importance of media in disseminating new terminologies and concepts.</h3>
+<p>The media is crucial in disseminating new terminologies and concepts to the public. It serves as a platform for introducing and explaining unfamiliar terms and ideas, making them accessible and understandable to a broad audience. A critical aspect of the media’s role in disseminating new terminologies and concepts is its ability to reach a large audience. The mass media, including mainstream newspapers, television, and online news outlets, have a broad reach and can effectively communicate new terminologies and concepts to a diverse range of people <span class="citation" data-cites="Herman1989">[<a href="#ref-Herman1989" role="doc-biblioref">13</a>]</span>. This widespread dissemination helps to increase awareness and understanding of these new terms and ideas. Furthermore, the media can shape public discourse and influence public opinion. Through news articles, opinion pieces, and other media content, the media can introduce and promote new terminologies and concepts, framing them in a way that resonates with the audience <span class="citation" data-cites="Shanahan1988">[<a href="#ref-Shanahan1988" role="doc-biblioref">14</a>]</span>. This framing can help to shape public perceptions and attitudes towards these new terms and ideas. In addition, the media’s role in disseminating new terminologies and concepts extends to specialized fields such as healthcare and medicine. Health journalism, for example, plays a crucial role in sharing health information with the public <span class="citation" data-cites="Keshvari2018">[<a href="#ref-Keshvari2018" role="doc-biblioref">15</a>]</span>. The media can introduce new medical terminologies and concepts, helping to educate the public about important health issues and advancements in medical research.</p>
+<p>However, it is essential to note that the media’s role in disseminating new terminologies and concepts is not without challenges. One challenge is the potential for the media to misinterpret or misrepresent these new terms and ideas. The media’s framing of new terminologies and concepts can sometimes be influenced by various factors, such as political or economic interests <span class="citation" data-cites="Herman1989">[<a href="#ref-Herman1989" role="doc-biblioref">13</a>]</span>. This can distort the original meaning or intent of these terms and ideas. Another challenge is the potential for the media to perpetuate stereotypes or biases through the use of new terminologies and concepts. For example, in the context of Islam-related vocabularies, the media’s use of specific terms can influence the audience’s perception of Islam as a religion of terrorism <span class="citation" data-cites="Younes2020">[<a href="#ref-Younes2020" role="doc-biblioref">16</a>]</span>. This highlights the importance of responsible and accurate reporting when introducing and disseminating new terminologies and concepts.</p>
+</section>
+</section>
+<section id="objective-of-the-research" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="objective-of-the-research"><span class="header-section-number">1.2</span> Objective of the research</h2>
+<p>Data science and other related terms have emerged as a crucial field in the era of big data and advanced analytics. It encompasses various techniques and methodologies for extracting insights and knowledge from large datasets. The prominence of data science in the Philippines has been a topic of interest, as it plays a significant role in driving innovation, economic growth, and decision-making processes. This research objective aims to assess the frequency and prominence of data science and related terms in Philippine newspapers.</p>
+</section>
+</section>
+<section id="literature-review" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Literature Review</h1>
+<section id="data-science-definition-and-global-trends" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="data-science-definition-and-global-trends"><span class="header-section-number">2.1</span> Data science: Definition and global trends</h2>
+<p>Data science is a field dedicated to the principled extraction of knowledge from complex data <span class="citation" data-cites="Sanchez-Pinto2018">[<a href="#ref-Sanchez-Pinto2018" role="doc-biblioref">17</a>]</span>. It combines principles from statistics, which focuses on learning relationships from data, and computer science, which emphasizes efficient computing algorithms <span class="citation" data-cites="Deo2015">[<a href="#ref-Deo2015" role="doc-biblioref">18</a>]</span>. The goal of data science is to extract generalizable knowledge from data <span class="citation" data-cites="Song2015">[<a href="#ref-Song2015" role="doc-biblioref">19</a>]</span>. It is a rapidly growing field becoming increasingly important in various domains, including critical care in medicine <span class="citation" data-cites="Sanchez-Pinto2018">[<a href="#ref-Sanchez-Pinto2018" role="doc-biblioref">17</a>]</span>. Data science is closely related to other concepts, such as big data and data-driven decision-making <span class="citation" data-cites="Provost2013">[<a href="#ref-Provost2013" role="doc-biblioref">2</a>]</span>. It is intricately intertwined with these concepts and plays a crucial role in analyzing and making sense of large volumes of data <span class="citation" data-cites="Provost2013">[<a href="#ref-Provost2013" role="doc-biblioref">2</a>]</span>. Data science is often used to rapidly derive knowledge and discover trends and novel research topics from vast literature <span class="citation" data-cites="Shen2018">[<a href="#ref-Shen2018" role="doc-biblioref">20</a>]</span>.</p>
+<p>While data science builds on knowledge from various disciplines, such as computer science, mathematics, and statistics, it is a unique field with challenges and mysteries to unlock <span class="citation" data-cites="Wing2020">[<a href="#ref-Wing2020" role="doc-biblioref">21</a>]</span>. It is establishing itself as a profession and has the potential to make significant contributions to society <span class="citation" data-cites="Walker2015">[<a href="#ref-Walker2015" role="doc-biblioref">22</a>]</span>. Data science is also characterized by its generic and vaguely defined nature <span class="citation" data-cites="Peng2021">[<a href="#ref-Peng2021" role="doc-biblioref">23</a>]</span>. There is no universally accepted definition of data science, and different perspectives exist. Some define data science as the study of the generalizable extraction of knowledge from data <span class="citation" data-cites="Song2015">[<a href="#ref-Song2015" role="doc-biblioref">19</a>]</span>, while others emphasize its interdisciplinary nature and its intersection with statistics, computer science, and substantive fields <span class="citation" data-cites="Zhang2021">[<a href="#ref-Zhang2021" role="doc-biblioref">24</a>]</span>.</p>
+</section>
+<section id="medias-role-in-popularizing-technical-jargons-and-scientific-terms" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="medias-role-in-popularizing-technical-jargons-and-scientific-terms"><span class="header-section-number">2.2</span> Media’s role in popularizing technical jargons and scientific terms</h2>
+<p>The role of media in introducing and normalizing new terminologies and concepts to the public is pivotal in today’s rapidly evolving world. As new scientific and technological terms such as ‘data science’, ‘big data’, and ‘artificial intelligence’ emerge, media outlets serve as the primary source for the public’s initial exposure to these concepts <span class="citation" data-cites="Krosnick2006">[<a href="#ref-Krosnick2006" role="doc-biblioref">25</a>]</span>. Moreover, the media plays a crucial role in providing context and explanation for these complex terms, making them accessible and understandable to a non-specialist audience. This involves decoding technical jargon and presenting information using metaphors, analogies, and simplifications to convey complex ideas <span class="citation" data-cites="Fitzgerald2021">[<a href="#ref-Fitzgerald2021" role="doc-biblioref">26</a>]</span>.</p>
+<p>The influence of media in shaping public understanding extends beyond the introduction of new concepts. It also encompasses the dissemination of knowledge through social media platforms, which have rapidly gained popularity worldwide. The speed of uptake of social media applications highlights their significance as tools for knowledge sharing, further emphasizing the central role of media in the dissemination of information <span class="citation" data-cites="Naeem2019">[<a href="#ref-Naeem2019" role="doc-biblioref">27</a>]</span>. Additionally, the development of the Internet and social media has expanded the speed and scope of information dissemination, although not all widely disseminated information is accurate, emphasizing the need for critical evaluation of information sources <span class="citation" data-cites="Wang2021">[<a href="#ref-Wang2021" role="doc-biblioref">28</a>]</span>.</p>
+<p>Furthermore, the media’s influence on public perception is evident in the context of scientific and technological advancements. The media operates at the interface between science and society, reporting on scientific advances and technological developments in ways that shape public perceptions of new technologies and their applications. This underscores the media’s role in framing and agenda setting, particularly in relation to novel technologies, influencing public views and perceptions <span class="citation" data-cites="Fitzgerald2021">[<a href="#ref-Fitzgerald2021" role="doc-biblioref">26</a>]</span>.</p>
+</section>
+</section>
+<section id="methodology" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Methodology</h1>
+</section>
+<section id="references" class="level1 unnumbered" data-number="4">
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">4 References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Hey2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Hey, T. <a href="https://doi.org/10.1007/978-3-642-33299-9_1">The Fourth Paradigm <span></span> Data-Intensive Scientific Discovery</a>. In <em>Communications in computer and information science</em>; Springer Berlin Heidelberg, 2012; pp. 1–1.</div>
+</div>
+<div id="ref-Provost2013" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Provost, F.; Fawcett, T. Data Science and Its Relationship to Big Data and Data-Driven Decision Making. <em>Big Data</em> <strong>2013</strong>, doi:<a href="https://doi.org/10.1089/big.2013.1508">10.1089/big.2013.1508</a>.</div>
+</div>
+<div id="ref-Tewari2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Tewari, S.H. Necessity of Data Science for Enhanced Cybersecurity. <em>International Journal of Data Science and Big Data Analytics</em> <strong>2021</strong>, doi:<a href="https://doi.org/10.51483/ijdsbda.1.1.2021.63-79">10.51483/ijdsbda.1.1.2021.63-79</a>.</div>
+</div>
+<div id="ref-Cash2003" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Cash, D.W.; Clark, W.C.; Alcock, F.; Dickson, N.M.; Eckley, N.; Guston, D.H.; Jäger, J.; Mitchell, R.B. Knowledge Systems for Sustainable Development. <em>Proceedings of the National Academy of Sciences</em> <strong>2003</strong>, doi:<a href="https://doi.org/10.1073/pnas.1231332100">10.1073/pnas.1231332100</a>.</div>
+</div>
+<div id="ref-Agha-Mir-Salim2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Agha-Mir-Salim, L.; Sarmiento, R.F. <em><a href="https://doi.org/10.1007/978-3-030-47994-7\_1">Health Information Technology as Premise for Data Science in Global Health: A Discussion of Opportunities and Challenges</a></em>; 2020;</div>
+</div>
+<div id="ref-Pearce2007" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Pearce, N.; Aït-Khaled, N.; Beasley, R.; Mallol, J.; Keil, U.; Mitchell, E.A.; Robertson, C.F. <a href="https://doi.org/10.1136/thx.2006.070169">Worldwide Trends in the Prevalence of Asthma Symptoms: Phase III of the International Study of Asthma and Allergies in Childhood (ISAAC)</a>. <em>Thorax</em> 2007.</div>
+</div>
+<div id="ref-Asher2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Asher, M.I.; García‐Marcos, L.; Pearce, N.; Strachan, D.P. Trends in Worldwide Asthma Prevalence. <em>European Respiratory Journal</em> <strong>2020</strong>, doi:<a href="https://doi.org/10.1183/13993003.02094-2020">10.1183/13993003.02094-2020</a>.</div>
+</div>
+<div id="ref-McKibbin2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">McKibbin, W.J.; Fernando, R. The Global Macroeconomic Impacts of COVID-19: Seven Scenarios. <em>SSRN Electronic Journal</em> <strong>2020</strong>, doi:<a href="https://doi.org/10.2139/ssrn.3547729">10.2139/ssrn.3547729</a>.</div>
+</div>
+<div id="ref-Ichhpujani2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Ichhpujani, P.; Kalra, G.; Kaur, R.; Bhartiya, S. Evolution of Glaucoma Research: A Scientometric Review. <em>Journal of Current Glaucoma Practice</em> <strong>2020</strong>, doi:<a href="https://doi.org/10.5005/jp-journals-10078-1286">10.5005/jp-journals-10078-1286</a>.</div>
+</div>
+<div id="ref-Harzing2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Harzing, A.; Alakangas, S. Google Scholar, Scopus and the Web of Science: A Longitudinal and Cross-Disciplinary Comparison. <em>Scientometrics</em> <strong>2015</strong>, doi:<a href="https://doi.org/10.1007/s11192-015-1798-9">10.1007/s11192-015-1798-9</a>.</div>
+</div>
+<div id="ref-Oliver2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Oliver, J.C.; McNeil, T. Undergraduate Data Science Degrees Emphasize Computer Science and Statistics but Fall Short in Ethics Training and Domain-Specific Context. <em>Peerj Computer Science</em> <strong>2021</strong>, doi:<a href="https://doi.org/10.7717/peerj-cs.441">10.7717/peerj-cs.441</a>.</div>
+</div>
+<div id="ref-Weichselbraun2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Weichselbraun, A.; Kuntschik, P.; Francolino, V.; Saner, M.; Dahinden, U.; Wyss, V. Adapting Data-Driven Research to the Fields of Social Sciences and the Humanities. <em>Future Internet</em> <strong>2021</strong>, doi:<a href="https://doi.org/10.3390/fi13030059">10.3390/fi13030059</a>.</div>
+</div>
+<div id="ref-Herman1989" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Herman, E.S.; Chomsky, N. Manufacturing Consent: The Political Economy of the Mass Media. <em>Contemporary Sociology a Journal of Reviews</em> <strong>1989</strong>, doi:<a href="https://doi.org/10.2307/2074220">10.2307/2074220</a>.</div>
+</div>
+<div id="ref-Shanahan1988" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Shanahan, D. Amusing Ourselves to Death: Public Discourse in the Age of Show Business. <em>The Social Science Journal</em> <strong>1988</strong>, doi:<a href="https://doi.org/10.1016/0362-3319(88)90048-1">10.1016/0362-3319(88)90048-1</a>.</div>
+</div>
+<div id="ref-Keshvari2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Keshvari, M.; Yamani, N.; Adibi, P.; Shahnazi, H. Health Journalism: Health Reporting Status and Challenges. <em>Iranian Journal of Nursing and Midwifery Research</em> <strong>2018</strong>, doi:<a href="https://doi.org/10.4103/ijnmr.ijnmr\_158\_16">10.4103/ijnmr.ijnmr\_158\_16</a>.</div>
+</div>
+<div id="ref-Younes2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Younes, Z.B.; Hassan, I.; Azmi, M.N.L. A Pragmatic Analysis of Islam-Related Terminologies in Selected Eastern and Western Mass Media. <em>Arab World English Journal</em> <strong>2020</strong>, doi:<a href="https://doi.org/10.24093/awej/vol11no2.6">10.24093/awej/vol11no2.6</a>.</div>
+</div>
+<div id="ref-Sanchez-Pinto2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Sanchez-Pinto, L.N.; Luo, Y.; Churpek, M.M. Big Data and Data Science in Critical Care. <em>Chest Journal</em> <strong>2018</strong>, doi:<a href="https://doi.org/10.1016/j.chest.2018.04.037">10.1016/j.chest.2018.04.037</a>.</div>
+</div>
+<div id="ref-Deo2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">Deo, R.C. Machine Learning in Medicine. <em>Circulation</em> <strong>2015</strong>, doi:<a href="https://doi.org/10.1161/circulationaha.115.001593">10.1161/circulationaha.115.001593</a>.</div>
+</div>
+<div id="ref-Song2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Song, I.-Y.; Zhu, Y. Big Data and Data Science: What Should We Teach? <em>Expert Systems</em> <strong>2015</strong>, <em>33</em>, 364–373, doi:<a href="https://doi.org/10.1111/exsy.12130">10.1111/exsy.12130</a>.</div>
+</div>
+<div id="ref-Shen2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline">Shen, S.; Cheng, C.; Yang, J.; Yang, S. Visualized Analysis of Developing Trends and Hot Topics in Natural Disaster Research. <em>Plos One</em> <strong>2018</strong>, doi:<a href="https://doi.org/10.1371/journal.pone.0191250">10.1371/journal.pone.0191250</a>.</div>
+</div>
+<div id="ref-Wing2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline">Wing, J.M. Ten Research Challenge Areas in Data Science. <strong>2020</strong>, doi:<a href="https://doi.org/10.1162/99608f92.c6577b1f">10.1162/99608f92.c6577b1f</a>.</div>
+</div>
+<div id="ref-Walker2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline">Walker, M. The Professionalisation of Data Science. <em>International Journal of Data Science</em> <strong>2015</strong>, doi:<a href="https://doi.org/10.1504/ijds.2015.069048">10.1504/ijds.2015.069048</a>.</div>
+</div>
+<div id="ref-Peng2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline">Peng, R.D.; Parker, H.S. <a href="https://arxiv.org/abs/2105.06324">Perspective on Data Science</a> 2021.</div>
+</div>
+<div id="ref-Zhang2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline">Zhang, Z.; Zhang, D. What Is Data Science? An Operational Definition Based on Text Mining of Data Science Curricula. <em>Journal of Behavioral Data Science</em> <strong>2021</strong>, <em>1</em>, 1–16, doi:<a href="https://doi.org/10.35566/jbds/v1n1/p1">10.35566/jbds/v1n1/p1</a>.</div>
+</div>
+<div id="ref-Krosnick2006" class="csl-entry" role="listitem">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline">Krosnick, J.A.; Holbrook, A.L.; Lowe, L.; Visser, P.S. The Origins and Consequences of Democratic Citizens<span></span> Policy Agendas: A Study of Popular Concern about Global Warming. <em>Climatic Change</em> <strong>2006</strong>, <em>77</em>, 7–43, doi:<a href="https://doi.org/10.1007/s10584-006-9068-8">10.1007/s10584-006-9068-8</a>.</div>
+</div>
+<div id="ref-Fitzgerald2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline">Fitzgerald, A.; Halliday, J.; Heath, D. Environmental <span>DNA</span> as Novel Technology: Lessons in Agenda Setting and Framing in News Media. <em>Animals</em> <strong>2021</strong>, <em>11</em>, 2874, doi:<a href="https://doi.org/10.3390/ani11102874">10.3390/ani11102874</a>.</div>
+</div>
+<div id="ref-Naeem2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline">Naeem, M. Uncovering the Role of Social Media and Cross-Platform Applications as Tools for Knowledge Sharing. <em><span>VINE</span> Journal of Information and Knowledge Management Systems</em> <strong>2019</strong>, <em>49</em>, 257–276, doi:<a href="https://doi.org/10.1108/vjikms-01-2019-0001">10.1108/vjikms-01-2019-0001</a>.</div>
+</div>
+<div id="ref-Wang2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline">Wang, X.; Li, Y.; Li, J.; Liu, Y.; Qiu, C. A Rumor Reversal Model of Online Health Information During the Covid-19 Epidemic. <em>Information Processing <span>&amp;</span>amp<span class="math inline">\(\mathsemicolon\)</span> Management</em> <strong>2021</strong>, <em>58</em>, 102731, doi:<a href="https://doi.org/10.1016/j.ipm.2021.102731">10.1016/j.ipm.2021.102731</a>.</div>
+</div>
+</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
