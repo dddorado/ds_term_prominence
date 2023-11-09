@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+#inq-media-img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+#inq-media-img img {
+	width: 100%;
+}
+
+#inq-media-title {
+	font-family: 'mallory', arial, sans-serif;
+	font-size: 14px;
+	color: #333333;
+	font-weight: 700;
+	margin: 10px auto 0;
+}
+
+#inq-media-cap {
+	font-family: 'Noto Serif', serif;
+	font-size: 14px;
+	color: #333333;
+	margin: 10px auto 0;
+	line-height: 1.2em;
+}
+
+#inq-media-story {
+	font-family: 'Noto Serif', serif;
+	font-size: 14px;
+	color: #333333;
+	margin: 10px auto 0;
+	font-weight: 700;
+}
+
+#inq-media-story a, #inq-media-story a:visited, #inq-media-story a:hover {
+	color: #0b72b5;
+	text-decoration: none;
+}
+
+#inq-media-filename {
+	font-family: 'Noto Serif', serif;
+	font-size: 12px;
+	color: #9f9f9f;
+	margin: 10px auto 0;
+	padding: 0 0 15px 0;
+}
+
+#inq-media-filename h1 {
+	display: inline;
+}
+
+
+/* 1024px */
+@media only screen and (min-width: 1024px) and (max-width: 1040px){
+
+
+}
+
+
+/* 768px */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/* 720px */
+@media only screen and (min-width: 720px) and (max-width: 767px){
+
+
+}
+
+/* 600px */
+@media only screen and (min-width: 600px) and (max-width: 719px){
+
+
+}
+
+
+/* 480px */
+@media only screen and (min-width: 480px) and (max-width: 599px){
+
+
+}
+
+/* 375px */
+@media only screen and (min-width: 375px) and (max-width: 479px){
+
+
+}
+
+
+/* 360px */
+@media only screen and (min-width: 360px) and (max-width: 374px){
+
+
+}
+
+/* 320px */
+@media only screen and (min-width: 320px) and (max-width: 359px){
+
+
+}
+
+

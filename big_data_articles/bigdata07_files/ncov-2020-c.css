@@ -1,0 +1,365 @@
+@charset "utf-8";
+/* NEW GALLERY */
+#ncov-wrap {
+	width: 980px;
+	height: auto;
+	margin: 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#ncov-box {
+	margin: 0 0 10px 0;
+}
+
+.ncov-twocol {
+	width: 49%;
+	overflow: hidden;
+}
+
+.ncov-twocol img {
+	width: 100%;
+}
+
+.ncov-onecol {
+	width: 100%;
+	text-align: center;
+}
+
+.ncov-onecol img {
+	width: 100%;
+}
+
+.ncov-threecol {
+	width: 32%;
+}
+
+.ncov-threecol img {
+	width: 100%;
+}
+
+
+#ncovlbl {
+	font-family: 'Oswald';
+	font-size: 34px;
+	font-weight: 700;
+	text-align: center;
+	color: #333333;
+}
+
+#ncovdate {
+	font-family: 'mallory';
+	font-size: 16px;
+	color: #333333;
+	margin: 10px 0 0 0;
+}
+
+.ncov-mid {
+	width: 100%;
+}
+
+.ncov-mid img {
+	width: 100%;
+}
+
+.ncov-mobile {
+	display: none;
+}
+
+.ncov-desktop {
+	display: block;
+}
+
+#cmr-info-ncov {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+}
+
+#cmr-info-ncov h2 {
+	font-family: 'mallory';
+	font-size: 32px;
+	padding: 0 20px;
+	line-height: 38px;
+	letter-spacing: 0.05em;
+	font-weight: 700;
+}
+
+/* 1024px */
+@media only screen and (min-width: 1024px) and (max-width: 1040px){
+
+
+}
+
+
+/* 768px */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+/* NEW GALLERY */
+#ncov-wrap {
+	width: 97%;
+	height: auto;
+	margin: 20px auto;
+}
+
+#ncov-box {
+	margin: 0 0 10px 0;
+}
+
+.ncov-twocol {
+	width: 100%;
+	overflow: hidden;
+}
+
+.ncov-threecol {
+	width: 100%;
+}
+
+.ncov-mobile {
+	display: block;
+}
+
+.ncov-desktop {
+	display: none;
+}
+
+#cmr-info-ncov h2 {
+	font-size: 18px;
+	padding: 0 10px;
+	line-height: 22px;
+}
+
+}
+
+/* 720px */
+@media only screen and (min-width: 720px) and (max-width: 767px){
+/* NEW GALLERY */
+#ncov-wrap {
+	width: 97%;
+	height: auto;
+	margin: 20px auto;
+}
+
+#ncov-box {
+	margin: 0 0 10px 0;
+}
+
+.ncov-twocol {
+	width: 100%;
+	overflow: hidden;
+}
+
+.ncov-threecol {
+	width: 100%;
+}
+
+.ncov-mobile {
+	display: block;
+}
+
+.ncov-desktop {
+	display: none;
+}
+
+#cmr-info-ncov h2 {
+	font-size: 18px;
+	padding: 0 10px;
+	line-height: 22px;
+}
+
+}
+
+/* 600px */
+@media only screen and (min-width: 600px) and (max-width: 719px){
+/* NEW GALLERY */
+#ncov-wrap {
+	width: 97%;
+	height: auto;
+	margin: 20px auto;
+}
+
+#ncov-box {
+	margin: 0 0 10px 0;
+}
+
+.ncov-twocol {
+	width: 100%;
+	overflow: hidden;
+}
+
+.ncov-threecol {
+	width: 100%;
+}
+
+.ncov-mobile {
+	display: block;
+}
+
+.ncov-desktop {
+	display: none;
+}
+
+#cmr-info-ncov h2 {
+	font-size: 18px;
+	padding: 0 10px;
+	line-height: 22px;
+}
+
+}
+
+/* 480px */
+@media only screen and (min-width: 480px) and (max-width: 599px){
+/* NEW GALLERY */
+#ncov-wrap {
+	width: 97%;
+	height: auto;
+	margin: 20px auto;
+}
+
+#ncov-box {
+	margin: 0 0 10px 0;
+}
+
+.ncov-twocol {
+	width: 100%;
+	overflow: hidden;
+}
+
+.ncov-threecol {
+	width: 100%;
+}
+
+.ncov-mobile {
+	display: block;
+}
+
+.ncov-desktop {
+	display: none;
+}
+
+#cmr-info-ncov h2 {
+	font-size: 18px;
+	padding: 0 10px;
+	line-height: 22px;
+}
+
+}
+
+/* 375px */
+@media only screen and (min-width: 375px) and (max-width: 479px){
+/* NEW GALLERY */
+#ncov-wrap {
+	width: 97%;
+	height: auto;
+	margin: 20px auto;
+}
+
+#ncov-box {
+	margin: 0 0 10px 0;
+}
+
+.ncov-twocol {
+	width: 100%;
+	overflow: hidden;
+}
+
+.ncov-threecol {
+	width: 100%;
+}
+
+.ncov-mobile {
+	display: block;
+}
+
+.ncov-desktop {
+	display: none!important;
+}
+
+#cmr-info-ncov h2 {
+	font-size: 18px;
+	padding: 0 10px;
+	line-height: 22px;
+}
+
+}
+
+/* 360px */
+@media only screen and (min-width: 360px) and (max-width: 374px){
+/* NEW GALLERY */
+#ncov-wrap {
+	width: 97%;
+	height: auto;
+	margin: 20px auto;
+}
+
+#ncov-box {
+	margin: 0 0 10px 0;
+}
+
+.ncov-twocol {
+	width: 100%;
+	overflow: hidden;
+}
+
+.ncov-threecol {
+	width: 100%;
+}
+
+.ncov-mobile {
+	display: block;
+}
+
+.ncov-desktop {
+	display: none;
+}
+
+#cmr-info-ncov h2 {
+	font-size: 18px;
+	padding: 0 10px;
+	line-height: 22px;
+}
+
+}
+
+/* 320px */
+@media only screen and (min-width: 320px) and (max-width: 359px){
+/* NEW GALLERY */
+#ncov-wrap {
+	width: 97%;
+	height: auto;
+	margin: 20px auto;
+}
+
+#ncov-box {
+	margin: 0 0 10px 0;
+}
+
+.ncov-twocol {
+	width: 100%;
+	overflow: hidden;
+}
+
+.ncov-threecol {
+	width: 100%;
+}
+
+.ncov-mobile {
+	display: block;
+}
+
+.ncov-desktop {
+	display: none;
+}
+
+#cmr-info-ncov h2 {
+	font-size: 18px;
+	padding: 0 10px;
+	line-height: 22px;
+}
+
+
+}
