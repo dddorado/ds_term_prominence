@@ -15,7 +15,8 @@ abstract: >
 keywords:
   - Data Science
   - Philippines Newspaper
-  - Inquirer Newspaper
+  - Philippine Daily Inquirer
+  - Agenda Setting Theory
 license: "CC BY"
 copyright: 
   holder: Dan Anthony Dorado
@@ -66,6 +67,18 @@ The role of media in introducing and normalizing new terminologies and concepts 
 The influence of media in shaping public understanding extends beyond the introduction of new concepts. It also encompasses the dissemination of knowledge through social media platforms, which have rapidly gained popularity worldwide. The speed of uptake of social media applications highlights their significance as tools for knowledge sharing, further emphasizing the central role of media in the dissemination of information [@Naeem2019]. Additionally, the development of the Internet and social media has expanded the speed and scope of information dissemination, although not all widely disseminated information is accurate, emphasizing the need for critical evaluation of information sources [@Wang2021].
 
 Furthermore, the media's influence on public perception is evident in the context of scientific and technological advancements. The media operates at the interface between science and society, reporting on scientific advances and technological developments in ways that shape public perceptions of new technologies and their applications. This underscores the media's role in framing and agenda setting, particularly in relation to novel technologies, influencing public views and perceptions [@Fitzgerald2021].
+
+## Theoretical Framework
+
+Agenda-setting theory is a well-established and influential theoretical framework in the field of communication research. It focuses on the role of the media in shaping public opinion and influencing the salience of issues in society. According to the theory, the media has the power to determine which issues are important and worthy of public attention, thus setting the agenda for public discourse [@McCombs2006].
+
+One important aspect of agenda-setting theory is the transfer of salience, which refers to the media's ability to not only determine which issues are important but also shape how people think about those issues. This transfer of salience occurs through the media's selection and emphasis of certain issues, which in turn influences the public's perception and understanding of those issues [@McCombs2006]. Furthermore, the media's agenda-setting power extends not only to the salience of issues but also to the salience of their attributes [@Vu2014]. In other words, the media can shape how people think about the characteristics and qualities of specific issues.
+
+Agenda-setting research has evolved over the years, with scholars refining and expanding the scope of the theory. For example, researchers have explored intermedia agenda-setting effects, which examine how different media outlets influence each other in shaping the public agenda. This expansion has led to a more sophisticated understanding of agenda-setting effects and their impact on public opinion [@Lim2006].
+
+Moreover, agenda-setting theory has found applications in various fields, including politics, journalism, and public relations. It has been used to study the influence of the media on political campaigns, the framing of news stories, and the communication of consent [@Caldwell1996;@Meraz2011;@McCombs1997]. The theory has also been examined in the context of online news media, where researchers have analyzed agenda-setting effects among different platforms [@Lim2006].
+
+In recent years, there has been a growing interest in meta-analyses of agenda-setting research, which provide a comprehensive overview of the existing empirical literature. These meta-analyses analyze the evolution of agenda-setting theory in terms of research focus, subject areas, and research methods. By synthesizing and analyzing statistical indicators from a large number of studies, these meta-analyses contribute to a deeper understanding of the current state of agenda-setting research [@Li2022].
 
 # Methodology
 
