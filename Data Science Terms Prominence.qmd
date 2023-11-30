@@ -82,4 +82,62 @@ In recent years, there has been a growing interest in meta-analyses of agenda-se
 
 # Methodology
 
+## Selection of newspapers
+The selection of newspapers for a study focused on data science-related terms is crucial for comprehensive coverage and depth of analysis. In this research, the Philippine Daily Inquirer website has been chosen for several reasons. Firstly, the Philippine Daily Inquirer is one of the most widely read newspapers in the Philippines, ensuring that the analysis is relevant to a broad online audience. Additionally, the extensive archives of the online version of the newspaper are essential for historical data analysis, allowing for an exploration of the evolution of data science terminology over time. The diverse array of articles, including news, opinion pieces, features, and editorials, published on the website is vital for understanding the different contexts in which data science-related terms are used. As a continually updated digital news source, the Philippine Daily Inquirer website offers the most current perspective on the use and understanding of data science terms. Moreover, the newspaper's national scope reflects national interests and discourse, providing a comprehensive overview of how data science is perceived and talked about across the country. The editorial stance and policies of the newspaper provide insight into how data science topics are framed and prioritized, which is an important aspect of media analysis.
+
+## Time frame of the study
+
+The time frame for the study, spanning from 1993 to 2023, is crucial for capturing the evolution of data science in the Philippine media landscape. This extended period allows for the identification of long-term trends and patterns in media coverage related to data science [@Ho2007]. Additionally, the chosen period should align with significant events or developments in the field of data science, such as the introduction of data science courses, government initiatives, or the establishment of data science firms in the Philippines.
+
+The start and end dates of the data collection period should be justified based on the emergence of key events or milestones in the Philippine data science landscape [@Suppli2018]. Furthermore, dividing the time frame into segments, such as monthly or quarterly intervals, allows for a detailed temporal analysis, enabling the examination of changes in reporting frequency or contextual shifts around specific events.
+
+The selected time frame may influence the results and the interpretation of trends in the data, as it allows for the assessment of any immediate effects of significant global or local events on the presence and representation of data science in the press. Considerations for seasonal variations or particular events, such as elections or natural disasters, should also be factored in, as they might affect media coverage and public interest in data science.
+
+If prior data is available, a comparative analysis with previous periods can provide valuable insights into the growth, decline, or cyclical patterns in the coverage of data science-related terms. Anticipating the impact of the time frame on the results is essential, considering how seasonal variations or specific events, such as elections or natural disasters, might influence media coverage and public interest in data science.
+
+## Data Collection Process
+
+This process begins with the careful selection of primary and secondary keywords, such as "**Data Science**", "**Big Data**", "**Analytics**", "**Artificial Intelligence**", along with related terms like "**Robotics**". The search for these keywords is facilitated through the use of search textbook of [https://www.inquirer.net/](https://www.inquirer.net/). To validate the accuracy and relevance of the automated search results, a manual review process is implemented. This involves random checks to ensure articles are contextually related to data science and its associated fields. Moreover, the entire process is conducted with a strict adherence to ethical and legal considerations, ensuring compliance with copyright laws and respect for privacy and ethical guidelines, especially when handling articles that include interviews or personal data. Through these comprehensive keyword search techniques, the study aims to gather a wide range of data from the Philippine Daily Inquirer, offering detailed insights into the media's portrayal and emphasis on data science and related terms.
+
+# Findings
+
+## Computational Environment and Software
+
+In this study, we employed a robust computational environment to ensure the reliability and reproducibility of our data processing and analysis. Our analysis pipeline was constructed with a focus on using widely-recognized, open-source software to enhance the accessibility and verifiability of our methodologies.
+
+The primary statistical analyses and data processing tasks were conducted using `R` [@R2023], a language and environment specifically designed for statistical computing and graphics. The R environment is renowned for its extensive package ecosystem and its ability to handle a wide range of data types and analytical procedures. For this study, we used `R` version 4.3.0, ensuring that all analyses benefit from the latest improvements and bug fixes.
+
+Complementing `R`, we utilized `RStudio` [@Rstudio2023], an integrated development environment (IDE) that provides a user-friendly interface for `R`. `RStudio` version 2023.06.1+524 was employed, which offers enhanced coding tools, debugging capabilities, and data visualization features. The combination of `R` and `RStudio` provided a versatile and efficient platform for coding, data manipulation, and analysis.
+
+For web scraping and HTML data extraction, the `rvest` package [@rvest2022] in `R` was utilized. This package simplifies the process of reading and manipulating HTML content, making it invaluable for gathering data from web sources. The version 1.0.3 of rvest was specifically used.
+
+Data manipulation and transformation tasks were streamlined using the `tidyverse` collection of `R` packages [@tidyverse2019]. This suite of packages, including `dplyr`, `tidyr`, and `ggplot2`, facilitates efficient data processing and visualization. We specifically employed `tidyverse` version 2.0.0.
+
+The primary operating system used for all data processing tasks was `Windows 11 x64 (build 22621)`. This version of Windows offers enhanced security features, improved performance, and a user-friendly interface, which significantly contributed to the efficiency of our data handling processes. The 64-bit architecture was particularly beneficial for handling large datasets, ensuring that memory-intensive operations were executed smoothly.
+
+For transparency and to facilitate reproducibility of our findings, all scripts and processed data files have been made publicly available. They are hosted on GitHub, a widely recognized platform for version control and code sharing. The repository can be accessed at [https://github.com/dddorado/ds_term_prominence](https://github.com/dddorado/ds_term_prominence). This repository includes all the scripts used in the data processing and analysis phases, along with detailed documentation on the usage and functionality of these scripts.
+
+## Data Scrapping Process
+
+```{r Install package, eval=FALSE}
+library(rvest)
+library(tidyverse)
+```
+
+The `rvest` and `tidyverse` libraries in R are essential for tasks related to web scraping in R.
+
+Starting with `rvest`, this package is specifically designed for web scraping. It allows you to read HTML content from websites using `read_html()`. Once you have the HTML content, you can use functions like `html_nodes()` and `html_element()` to select specific elements based on CSS selectors. `html_nodes()` is useful for extracting a list of elements, while `html_element()` is handy when you just need the first matching element. After selecting these elements, `html_text()` can be used to extract their text content. The `rvest` package integrates smoothly with magrittr to facilitate the chaining of operations, making the code more readable and concise. Detailed documentation for `rvest` is available on the CRAN `rvest` package page .
+
+The `tidyverse` package, on the other hand, is a collection of R packages designed for comprehensive data science tasks. It includes tools for data manipulation, exploration, and visualization. Notable among its components are `ggplot2` for data visualization, `dplyr` for data manipulation, and `tibble` for modern data frames. The pipe operator `%>%` from `magrittr`, also widely used in `tidyverse`, allows for chaining together a sequence of functions, making data manipulation tasks more intuitive and streamlined. Specific functions in `dplyr` like `mutate()`, `filter()`, and `summarize()` enable sophisticated data operations, while `ggplot2` provides a powerful system for creating complex and aesthetically pleasing visualizations. Comprehensive information, tutorials, and user guides for tidyverse can be found on its dedicated website, and the book "R for Data Science" by Hadley Wickham and Garrett Grolemund is an excellent resource for delving deeper into these packages [@tidyverse2019].
+
+
+
+
+
+
+
+
+
+
+
 # References
